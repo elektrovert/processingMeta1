@@ -39,13 +39,13 @@ public class MetaRealityTest extends PApplet {
 		textSize(16);
 		for(Device d : devices){
 			fill(d.color);
-			rect(d.x, d.y, d.xLength, d.yLength);
+			ellipse(d.x, d.y, d.xLength, d.xLength);
 			fill(0xffffffff);
 			text(d.getName(), d.getX(), d.getY());
 		}
 		
 		fill(myDevice.getColor());
-		rect(myDevice.getX(), myDevice.getY(), myDevice.getxLength(), myDevice.getyLength());
+		ellipse(myDevice.getX(), myDevice.getY(), myDevice.getxLength(), myDevice.getxLength());
 		fill(0xffffffff);
 		text(myDevice.getName(), myDevice.getX(), myDevice.getY());
 		checkLabel();
